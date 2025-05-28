@@ -466,7 +466,7 @@ class UpdateModel extends BaseDatabaseModel
      *
      * @return void
      *
-     * @since 6.0.0
+     * @since 5.4.0
      */
     public function updateLastHealthCheck()
     {
@@ -489,7 +489,7 @@ class UpdateModel extends BaseDatabaseModel
      *
      * @return string|null
      *
-     * @since 6.0.0
+     * @since 5.4.0
      */
     public function getAutoUpdateVersion(): ?string
     {
@@ -505,7 +505,7 @@ class UpdateModel extends BaseDatabaseModel
      *
      * @return boolean
      *
-     * @since 6.0.0
+     * @since 5.4.0
      */
     public function getAutoUpdateRequirementsState(): bool
     {
@@ -525,7 +525,7 @@ class UpdateModel extends BaseDatabaseModel
      *
      * @return array
      *
-     * @since 6.0.0
+     * @since 5.4.0
      */
     public function prepareAutoUpdate(string $targetVersion): array
     {
@@ -556,7 +556,7 @@ class UpdateModel extends BaseDatabaseModel
      *
      * @return bool
      *
-     * @since 6.0.0
+     * @since 5.4.0
      */
     public function changeAutoUpdateRegistration(AutoupdateRegisterState $targetState)
     {
@@ -631,7 +631,7 @@ class UpdateModel extends BaseDatabaseModel
      *
      * @return string
      *
-     * @since 6.0.0
+     * @since 5.4.0
      */
     protected function getAutoUpdateToken(): string
     {

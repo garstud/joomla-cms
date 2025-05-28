@@ -64,7 +64,7 @@ final class Joomlaupdate extends CMSPlugin implements SubscriberInterface
      * @return void
      * @throws \Exception
      *
-     * @since 6.0.0
+     * @since 5.4.0
      */
     public function onExtensionBeforeSave(\Joomla\CMS\Event\Model\BeforeSaveEvent $event)
     {
@@ -105,7 +105,7 @@ final class Joomlaupdate extends CMSPlugin implements SubscriberInterface
      *
      * @return  void
      *
-     * @since 6.0.0
+     * @since 5.4.0
      */
     public function onExtensionAfterSave(AfterSaveEvent $event): void
     {

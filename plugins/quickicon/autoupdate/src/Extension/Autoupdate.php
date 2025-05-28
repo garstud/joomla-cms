@@ -26,7 +26,7 @@ use Joomla\Module\Quickicon\Administrator\Event\QuickIconsEvent;
 /**
  * Joomla! auto update health check notification plugin
  *
- * @since  6.0.0
+ * @since  5.4.0
  */
 class Autoupdate extends CMSPlugin implements SubscriberInterface
 {
@@ -34,7 +34,7 @@ class Autoupdate extends CMSPlugin implements SubscriberInterface
      * Load the language file on instantiation.
      *
      * @var    boolean
-     * @since  6.0.0
+     * @since  5.4.0
      */
     protected $autoloadLanguage = true;
 
@@ -43,7 +43,7 @@ class Autoupdate extends CMSPlugin implements SubscriberInterface
      *
      * @var Document
      *
-     * @since  6.0.0
+     * @since  5.4.0
      */
     private $document;
 
@@ -52,7 +52,7 @@ class Autoupdate extends CMSPlugin implements SubscriberInterface
      *
      * @return  array
      *
-     * @since   6.0.0
+     * @since   5.4.0
      */
     public static function getSubscribedEvents(): array
     {
@@ -70,7 +70,7 @@ class Autoupdate extends CMSPlugin implements SubscriberInterface
      *                                             Recognized key values include 'name', 'group', 'params', 'language'
      *                                             (this list is not meant to be comprehensive).
      *
-     * @since   6.0.0
+     * @since   5.4.0
      */
     public function __construct($dispatcher, Document $document, array $config = [])
     {
@@ -88,7 +88,7 @@ class Autoupdate extends CMSPlugin implements SubscriberInterface
      *
      * @return  void
      *
-     * @since   6.0.0
+     * @since   5.4.0
      */
     public function getAutoUpdateStatusNotification(QuickIconsEvent $event)
     {

@@ -24,7 +24,7 @@ use Tobscure\JsonApi\Resource;
 /**
  * The healthcheck view
  *
- * @since  6.0.0
+ * @since  5.4.0
  */
 class JsonapiView extends BaseApiView
 {
@@ -33,7 +33,7 @@ class JsonapiView extends BaseApiView
      *
      * @return string  The rendered data
      *
-     * @since   6.0.0
+     * @since   5.4.0
      */
     public function healthCheck()
     {
@@ -55,7 +55,7 @@ class JsonapiView extends BaseApiView
      *
      * @return  array
      *
-     * @since   6.0.0
+     * @since   5.4.0
      */
     protected function getStatsData()
     {
