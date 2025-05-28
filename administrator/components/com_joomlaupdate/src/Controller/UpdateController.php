@@ -721,7 +721,7 @@ class UpdateController extends BaseController
      *
      * @return  void
      *
-     * @since   6.0.0
+     * @since   5.4.0
      */
     public function healthstatus()
     {

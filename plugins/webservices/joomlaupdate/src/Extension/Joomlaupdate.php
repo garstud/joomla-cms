@@ -22,7 +22,7 @@ use Joomla\Router\Route;
 /**
  * Web Services adapter for com_joomlaupdate.
  *
- * @since  6.0.0
+ * @since  5.4.0
  */
 final class Joomlaupdate extends CMSPlugin implements SubscriberInterface
 {
@@ -31,7 +31,7 @@ final class Joomlaupdate extends CMSPlugin implements SubscriberInterface
      *
      * @return  array
      *
-     * @since   6.0.0
+     * @since   5.4.0
      */
     public static function getSubscribedEvents(): array
     {
@@ -47,7 +47,7 @@ final class Joomlaupdate extends CMSPlugin implements SubscriberInterface
      *
      * @return  void
      *
-     * @since   6.0.0
+     * @since   5.4.0
      */
     public function onBeforeApiRoute(BeforeApiRouteEvent $event): void
     {
