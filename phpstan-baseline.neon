@@ -945,24 +945,6 @@ parameters:
 			path: administrator/components/com_categories/src/View/Category/HtmlView.php
 
 		-
-			message: '''
-				#^Call to deprecated method getInstance\(\) of class Joomla\\String\\Inflector\:
-				3\.0  Use static methods without a class instance instead\.$#
-			'''
-			identifier: staticMethod.deprecated
-			count: 1
-			path: administrator/components/com_categories/tmpl/categories/default.php
-
-		-
-			message: '''
-				#^Call to deprecated method toPlural\(\) of class Joomla\\String\\Inflector\:
-				3\.0  Use Doctrine\\Common\\Inflector\\Inflector\:\:pluralize\(\) instead\.$#
-			'''
-			identifier: method.deprecated
-			count: 1
-			path: administrator/components/com_categories/tmpl/categories/default.php
-
-		-
 			message: '#^Access to an undefined property Joomla\\Component\\Categories\\Administrator\\View\\Category\\HtmlView\:\:\$useCoreUI\.$#'
 			identifier: property.notFound
 			count: 1
@@ -3488,6 +3470,17 @@ parameters:
 
 		-
 			message: '''
+				#^Call to deprecated method getError\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				3\.1\.4 will be removed in 7\.0
+				             Will be removed without replacement
+				             Catch thrown Exceptions instead of getError$#
+			'''
+			identifier: method.deprecated
+			count: 2
+			path: administrator/components/com_languages/src/Controller/InstalledController.php
+
+		-
+			message: '''
 				#^Call to deprecated method getInstance\(\) of class Joomla\\CMS\\Language\\Language\:
 				4\.3 will be removed in 6\.0
 				             Use the language factory instead
@@ -3530,6 +3523,17 @@ parameters:
 			identifier: method.deprecated
 			count: 1
 			path: administrator/components/com_languages/src/Controller/OverrideController.php
+
+		-
+			message: '''
+				#^Call to deprecated method getError\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				3\.1\.4 will be removed in 7\.0
+				             Will be removed without replacement
+				             Catch thrown Exceptions instead of getError$#
+			'''
+			identifier: method.deprecated
+			count: 1
+			path: administrator/components/com_languages/src/Controller/OverridesController.php
 
 		-
 			message: '''
@@ -5873,24 +5877,6 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getInstance\(\) of class Joomla\\String\\Inflector\:
-				3\.0  Use static methods without a class instance instead\.$#
-			'''
-			identifier: staticMethod.deprecated
-			count: 1
-			path: administrator/components/com_tags/tmpl/tags/default.php
-
-		-
-			message: '''
-				#^Call to deprecated method toPlural\(\) of class Joomla\\String\\Inflector\:
-				3\.0  Use Doctrine\\Common\\Inflector\\Inflector\:\:pluralize\(\) instead\.$#
-			'''
-			identifier: method.deprecated
-			count: 1
-			path: administrator/components/com_tags/tmpl/tags/default.php
-
-		-
-			message: '''
 				#^Call to deprecated method getError\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
 				3\.1\.4 will be removed in 7\.0
 				             Will be removed without replacement
@@ -7079,12 +7065,6 @@ parameters:
 			path: administrator/components/com_users/tmpl/user/edit_groups.php
 
 		-
-			message: '#^Call to method pluralize\(\) of deprecated class Doctrine\\Common\\Inflector\\Inflector\.$#'
-			identifier: staticMethod.deprecatedClass
-			count: 1
-			path: administrator/components/com_workflow/src/Controller/DisplayController.php
-
-		-
 			message: '''
 				#^Call to deprecated method getError\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
 				3\.1\.4 will be removed in 7\.0
@@ -7373,30 +7353,6 @@ parameters:
 			identifier: method.deprecated
 			count: 1
 			path: administrator/modules/mod_stats_admin/src/Helper/StatsAdminHelper.php
-
-		-
-			message: '''
-				#^Call to deprecated method getLanguage\(\) of class Joomla\\CMS\\Factory\:
-				4\.3 will be removed in 6\.0
-				             Use the language service in the DI container or get from the application object
-				             Example\:
-				             Factory\:\:getApplication\(\)\-\>getLanguage\(\);$#
-			'''
-			identifier: staticMethod.deprecated
-			count: 2
-			path: administrator/modules/mod_submenu/mod_submenu.php
-
-		-
-			message: '''
-				#^Call to deprecated method getLanguage\(\) of class Joomla\\CMS\\Factory\:
-				4\.3 will be removed in 6\.0
-				             Use the language service in the DI container or get from the application object
-				             Example\:
-				             Factory\:\:getApplication\(\)\-\>getLanguage\(\);$#
-			'''
-			identifier: staticMethod.deprecated
-			count: 1
-			path: administrator/modules/mod_submenu/src/Menu/Menu.php
 
 		-
 			message: '''
@@ -13216,7 +13172,7 @@ parameters:
 		-
 			message: '''
 				#^Call to method getDispatcher\(\) of deprecated interface Joomla\\CMS\\Application\\EventAwareInterface\:
-				4\.3 will be removed in 6\.0
+				4\.3 will be removed in 7\.0
 				             This interface will be removed without replacement as the Joomla 3\.x compatibility layer will be removed$#
 			'''
 			identifier: method.deprecatedInterface
@@ -13533,24 +13489,7 @@ parameters:
 				             Catch thrown Exceptions instead of getError$#
 			'''
 			identifier: method.deprecated
-			count: 6
-			path: libraries/src/MVC/Controller/ApiController.php
-
-		-
-			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
-			'''
-			identifier: method.deprecated
-			count: 1
-			path: libraries/src/MVC/Controller/ApiController.php
-
-		-
-			message: '#^Call to method singularize\(\) of deprecated class Doctrine\\Common\\Inflector\\Inflector\.$#'
-			identifier: staticMethod.deprecatedClass
-			count: 4
+			count: 2
 			path: libraries/src/MVC/Controller/ApiController.php
 
 		-
@@ -15016,7 +14955,7 @@ parameters:
 		-
 			message: '''
 				#^Call to deprecated method register\(\) of class JLoader\:
-				4\.3 will be removed in 6\.0
+				4\.3 will be removed in 7\.0
 				             Classes should be autoloaded\. Use JLoader\:\:registerPrefix\(\) or JLoader\:\:registerNamespace\(\) to
 				             register an autoloader for your files\.$#
 			'''
@@ -15359,7 +15298,7 @@ parameters:
 		-
 			message: '''
 				#^Call to method getDispatcher\(\) of deprecated interface Joomla\\CMS\\Application\\EventAwareInterface\:
-				4\.3 will be removed in 6\.0
+				4\.3 will be removed in 7\.0
 				             This interface will be removed without replacement as the Joomla 3\.x compatibility layer will be removed$#
 			'''
 			identifier: method.deprecatedInterface
@@ -16021,12 +15960,6 @@ parameters:
 			path: plugins/workflow/featuring/src/Extension/Featuring.php
 
 		-
-			message: '#^Call to method singularize\(\) of deprecated class Doctrine\\Common\\Inflector\\Inflector\.$#'
-			identifier: staticMethod.deprecatedClass
-			count: 1
-			path: plugins/workflow/featuring/src/Extension/Featuring.php
-
-		-
 			message: '#^Access to an undefined property Joomla\\Plugin\\Workflow\\Notification\\Extension\\Notification\:\:\$app\.$#'
 			identifier: property.notFound
 			count: 2
@@ -16036,10 +15969,4 @@ parameters:
 			message: '#^Access to an undefined property Joomla\\Plugin\\Workflow\\Publishing\\Extension\\Publishing\:\:\$app\.$#'
 			identifier: property.notFound
 			count: 2
-			path: plugins/workflow/publishing/src/Extension/Publishing.php
-
-		-
-			message: '#^Call to method singularize\(\) of deprecated class Doctrine\\Common\\Inflector\\Inflector\.$#'
-			identifier: staticMethod.deprecatedClass
-			count: 1
 			path: plugins/workflow/publishing/src/Extension/Publishing.php
