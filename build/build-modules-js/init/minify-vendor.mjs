@@ -13,7 +13,6 @@ const folders = [
   'media/vendor/es-module-shims/js',
   'media/vendor/qrcode/js',
   'media/vendor/tinymce/langs',
-  'media/vendor/webcomponentsjs/js',
 ];
 
 let allFiles = [];
