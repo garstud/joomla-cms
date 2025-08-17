@@ -306,7 +306,7 @@ class InstallationController extends JSONController
      *
      * @return  void
      *
-     * @since   __DEPLOY_VERSION__
+     * @since   6.0.0
      */
     public function disableAutomatedUpdates()
     {
