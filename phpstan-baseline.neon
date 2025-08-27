@@ -248,10 +248,26 @@ parameters:
 
 		-
 			message: '''
+<<<<<<< HEAD
 				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
 				3\.1\.4 will be removed in 7\.0
 				             Will be removed without replacement
 				             Catch thrown Exceptions instead of getErrors$#
+=======
+				#^Call to deprecated method getInstance\(\) of class Joomla\\CMS\\Table\\Table\:
+				4\.3 will be removed in 6\.0
+				             Use the MvcFactory instead
+				             Example\: Factory\:\:getApplication\(\)\-\>bootComponent\('\.\.\.'\)\-\>getMVCFactory\(\)\-\>createTable\(\$name, \$prefix, \$config\);$#
+			'''
+			identifier: staticMethod.deprecated
+			count: 1
+			path: administrator/components/com_associations/src/Model/AssociationsModel.php
+
+		-
+			message: '''
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
+>>>>>>> upstream/5.4-dev
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -265,10 +281,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -604,10 +618,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -615,10 +627,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -626,10 +636,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -637,10 +645,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -693,10 +699,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -902,10 +906,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -930,10 +932,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -1333,6 +1333,18 @@ parameters:
 			path: administrator/components/com_contact/src/View/Contact/HtmlView.php
 
 		-
+<<<<<<< HEAD
+=======
+			message: '''
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
+			'''
+			identifier: method.deprecated
+			count: 1
+			path: administrator/components/com_contact/src/View/Contacts/HtmlView.php
+
+		-
+>>>>>>> upstream/5.4-dev
 			message: '#^Access to an undefined property Joomla\\Component\\Contact\\Administrator\\View\\Contact\\HtmlView\:\:\$useCoreUI\.$#'
 			identifier: property.notFound
 			count: 1
@@ -1590,10 +1602,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -1609,6 +1619,30 @@ parameters:
 			path: administrator/components/com_content/src/View/Articles/HtmlView.php
 
 		-
+<<<<<<< HEAD
+=======
+			message: '#^Access to an undefined property Joomla\\Component\\Content\\Administrator\\View\\Featured\\HtmlView\:\:\$hits\.$#'
+			identifier: property.notFound
+			count: 1
+			path: administrator/components/com_content/src/View/Featured/HtmlView.php
+
+		-
+			message: '#^Access to an undefined property Joomla\\Component\\Content\\Administrator\\View\\Featured\\HtmlView\:\:\$vote\.$#'
+			identifier: property.notFound
+			count: 1
+			path: administrator/components/com_content/src/View/Featured/HtmlView.php
+
+		-
+			message: '''
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
+			'''
+			identifier: method.deprecated
+			count: 1
+			path: administrator/components/com_content/src/View/Featured/HtmlView.php
+
+		-
+>>>>>>> upstream/5.4-dev
 			message: '#^Access to an undefined property Joomla\\Component\\Content\\Administrator\\View\\Article\\HtmlView\:\:\$configFieldsets\.$#'
 			identifier: property.notFound
 			count: 1
@@ -1753,10 +1787,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -1764,10 +1796,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -1775,10 +1805,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -1962,10 +1990,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -1973,10 +1999,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -1995,10 +2019,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -2518,10 +2540,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -2529,10 +2549,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -2540,10 +2558,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -2551,10 +2567,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -2562,10 +2576,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -2714,10 +2726,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -2725,10 +2735,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -2736,10 +2744,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -2747,10 +2753,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -3062,10 +3066,26 @@ parameters:
 
 		-
 			message: '''
+<<<<<<< HEAD
 				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
 				3\.1\.4 will be removed in 7\.0
 				             Will be removed without replacement
 				             Catch thrown Exceptions instead of getErrors$#
+=======
+				#^Instantiation of deprecated class Joomla\\CMS\\Object\\CMSObject\:
+				4\.3 will be removed in 6\.0
+				             Use \\stdClass or \\Joomla\\Registry\\Registry instead\.
+				             Example\: new \\Joomla\\Registry\\Registry\(\);$#
+			'''
+			identifier: new.deprecatedClass
+			count: 1
+			path: administrator/components/com_installer/src/Model/UpdatesitesModel.php
+
+		-
+			message: '''
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
+>>>>>>> upstream/5.4-dev
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -3085,10 +3105,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -3096,10 +3114,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -3113,10 +3129,37 @@ parameters:
 
 		-
 			message: '''
+<<<<<<< HEAD
 				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
 				3\.1\.4 will be removed in 7\.0
 				             Will be removed without replacement
 				             Catch thrown Exceptions instead of getErrors$#
+=======
+				#^Call to method __construct\(\) of deprecated class Joomla\\CMS\\Object\\CMSObject\:
+				4\.3 will be removed in 6\.0
+				             Use \\stdClass or \\Joomla\\Registry\\Registry instead\.
+				             Example\: new \\Joomla\\Registry\\Registry\(\);$#
+			'''
+			identifier: method.deprecatedClass
+			count: 1
+			path: administrator/components/com_installer/src/View/Update/HtmlView.php
+
+		-
+			message: '''
+				#^Instantiation of deprecated class Joomla\\CMS\\Object\\CMSObject\:
+				4\.3 will be removed in 6\.0
+				             Use \\stdClass or \\Joomla\\Registry\\Registry instead\.
+				             Example\: new \\Joomla\\Registry\\Registry\(\);$#
+			'''
+			identifier: new.deprecatedClass
+			count: 1
+			path: administrator/components/com_installer/src/View/Update/HtmlView.php
+
+		-
+			message: '''
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
+>>>>>>> upstream/5.4-dev
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -3124,10 +3167,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -3659,10 +3700,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -3670,10 +3709,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -3681,10 +3718,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -3752,10 +3787,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -3763,10 +3796,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -3938,10 +3969,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -3949,10 +3978,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -4388,10 +4415,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -4405,10 +4430,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -4427,10 +4450,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -4551,10 +4572,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -4562,10 +4581,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -4573,10 +4590,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -4733,10 +4748,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -4750,13 +4763,23 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
+<<<<<<< HEAD
+=======
+			path: administrator/components/com_modules/src/View/Modules/HtmlView.php
+
+		-
+			message: '''
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
+			'''
+			identifier: method.deprecated
+			count: 1
+>>>>>>> upstream/5.4-dev
 			path: administrator/components/com_modules/src/View/Select/HtmlView.php
 
 		-
@@ -4922,10 +4945,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -4933,10 +4954,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -5014,10 +5033,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -5025,10 +5042,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -5322,10 +5337,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -5333,10 +5346,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -5355,10 +5366,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -5366,10 +5375,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -5457,10 +5464,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -5534,17 +5539,6 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method get\(\) of class Joomla\\CMS\\MVC\\View\\AbstractView\:
-				5\.3\.0 will be removed in 7\.0\.
-				             Retrieve the model with \$model \= \$this\-\>getModel\(\); and call the methods
-				             to the model directly, e\.g\. \$model\-\>getItems\(\) instead of \$this\-\>get\('Items'\)\.$#
-			'''
-			identifier: method.deprecated
-			count: 1
-			path: administrator/components/com_scheduler/src/View/Logs/HtmlView.php
-
-		-
-			message: '''
 				#^Call to deprecated method getInstance\(\) of class Joomla\\CMS\\Toolbar\\Toolbar\:
 				4\.0 will be removed in 6\.0
 				             Use the ToolbarFactoryInterface instead
@@ -5557,10 +5551,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -5574,10 +5566,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -5793,10 +5783,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -5804,10 +5792,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -5943,10 +5929,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -5960,10 +5944,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -5989,10 +5971,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -6006,10 +5986,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -6638,10 +6616,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -6649,10 +6625,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -6671,10 +6645,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -6693,10 +6665,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -6725,10 +6695,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -6736,10 +6704,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -6747,10 +6713,38 @@ parameters:
 
 		-
 			message: '''
+<<<<<<< HEAD
 				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
 				3\.1\.4 will be removed in 7\.0
 				             Will be removed without replacement
 				             Catch thrown Exceptions instead of getErrors$#
+=======
+				#^Access to deprecated property \$db of class Joomla\\Component\\Users\\Administrator\\View\\Users\\HtmlView\:
+				4\.3 will be removed in 6\.0
+				             Will be removed without replacement use database from the container instead
+				             Example\: Factory\:\:getContainer\(\)\-\>get\(DatabaseInterface\:\:class\);$#
+			'''
+			identifier: property.deprecated
+			count: 1
+			path: administrator/components/com_users/src/View/Users/HtmlView.php
+
+		-
+			message: '''
+				#^Call to deprecated method getDbo\(\) of class Joomla\\CMS\\Factory\:
+				4\.3 will be removed in 6\.0
+				             Use the database service in the DI container
+				             Example\:
+				             Factory\:\:getContainer\(\)\-\>get\(DatabaseInterface\:\:class\);$#
+			'''
+			identifier: staticMethod.deprecated
+			count: 1
+			path: administrator/components/com_users/src/View/Users/HtmlView.php
+
+		-
+			message: '''
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
+>>>>>>> upstream/5.4-dev
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -7141,10 +7135,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -7152,10 +7144,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -7163,10 +7153,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -7174,10 +7162,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -7185,10 +7171,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -7196,10 +7180,8 @@ parameters:
 
 		-
 			message: '''
-				#^Call to deprecated method getErrors\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
-				3\.1\.4 will be removed in 7\.0
-				             Will be removed without replacement
-				             Catch thrown Exceptions instead of getErrors$#
+				#^Call to deprecated method setUseExceptions\(\) of class Joomla\\CMS\\MVC\\Model\\BaseModel\:
+				7\.0$#
 			'''
 			identifier: method.deprecated
 			count: 1
@@ -7913,6 +7895,29 @@ parameters:
 
 		-
 			message: '''
+<<<<<<< HEAD
+=======
+				#^Call to deprecated method cleanCache\(\) of class Joomla\\Component\\Content\\Site\\Model\\ArticleModel\:
+				4\.3 will be removed in 6\.0$#
+			'''
+			identifier: method.deprecated
+			count: 1
+			path: components/com_content/src/Model/ArticleModel.php
+
+		-
+			message: '''
+				#^Call to deprecated method getInstance\(\) of class Joomla\\CMS\\Table\\Table\:
+				4\.3 will be removed in 6\.0
+				             Use the MvcFactory instead
+				             Example\: Factory\:\:getApplication\(\)\-\>bootComponent\('\.\.\.'\)\-\>getMVCFactory\(\)\-\>createTable\(\$name, \$prefix, \$config\);$#
+			'''
+			identifier: staticMethod.deprecated
+			count: 1
+			path: components/com_content/src/Model/ArticleModel.php
+
+		-
+			message: '''
+>>>>>>> upstream/5.4-dev
 				#^Call to deprecated method getLanguage\(\) of class Joomla\\CMS\\Factory\:
 				4\.3 will be removed in 6\.0
 				             Use the language service in the DI container or get from the application object
@@ -15301,6 +15306,16 @@ parameters:
 
 		-
 			message: '''
+				#^Call to deprecated method setDispatcher\(\) of class Joomla\\Plugin\\Content\\Finder\\Extension\\Finder\:
+				5\.2 will be removed in 7\.0
+				             Plugin should implement DispatcherAwareInterface on its own, when it is needed\.$#
+			'''
+			identifier: method.deprecated
+			count: 1
+			path: plugins/content/finder/services/provider.php
+
+		-
+			message: '''
 				#^Call to deprecated method getDispatcher\(\) of class Joomla\\Plugin\\Content\\Finder\\Extension\\Finder\:
 				5\.2 will be removed in 7\.0
 				             Plugin should implement DispatcherAwareInterface on its own, when it is needed\.$#
@@ -15403,6 +15418,16 @@ parameters:
 
 		-
 			message: '''
+				#^Call to deprecated method setDispatcher\(\) of class Joomla\\Plugin\\Editors\\CodeMirror\\Extension\\Codemirror\:
+				5\.2 will be removed in 7\.0
+				             Plugin should implement DispatcherAwareInterface on its own, when it is needed\.$#
+			'''
+			identifier: method.deprecated
+			count: 1
+			path: plugins/editors/codemirror/services/provider.php
+
+		-
+			message: '''
 				#^Call to deprecated method getDispatcher\(\) of class Joomla\\Plugin\\Editors\\CodeMirror\\Extension\\Codemirror\:
 				5\.2 will be removed in 7\.0
 				             Plugin should implement DispatcherAwareInterface on its own, when it is needed\.$#
@@ -15413,6 +15438,16 @@ parameters:
 
 		-
 			message: '''
+				#^Call to deprecated method setDispatcher\(\) of class Joomla\\Plugin\\Editors\\None\\Extension\\None\:
+				5\.2 will be removed in 7\.0
+				             Plugin should implement DispatcherAwareInterface on its own, when it is needed\.$#
+			'''
+			identifier: method.deprecated
+			count: 1
+			path: plugins/editors/none/services/provider.php
+
+		-
+			message: '''
 				#^Call to deprecated method getDispatcher\(\) of class Joomla\\Plugin\\Editors\\None\\Extension\\None\:
 				5\.2 will be removed in 7\.0
 				             Plugin should implement DispatcherAwareInterface on its own, when it is needed\.$#
@@ -15420,6 +15455,16 @@ parameters:
 			identifier: method.deprecated
 			count: 1
 			path: plugins/editors/none/src/Extension/None.php
+
+		-
+			message: '''
+				#^Call to deprecated method setDispatcher\(\) of class Joomla\\Plugin\\Editors\\TinyMCE\\Extension\\TinyMCE\:
+				5\.2 will be removed in 7\.0
+				             Plugin should implement DispatcherAwareInterface on its own, when it is needed\.$#
+			'''
+			identifier: method.deprecated
+			count: 1
+			path: plugins/editors/tinymce/services/provider.php
 
 		-
 			message: '''
@@ -15607,6 +15652,16 @@ parameters:
 
 		-
 			message: '''
+				#^Call to deprecated method setDispatcher\(\) of class Joomla\\Plugin\\System\\Cache\\Extension\\Cache\:
+				5\.2 will be removed in 7\.0
+				             Plugin should implement DispatcherAwareInterface on its own, when it is needed\.$#
+			'''
+			identifier: method.deprecated
+			count: 1
+			path: plugins/system/cache/services/provider.php
+
+		-
+			message: '''
 				#^Call to deprecated method getDispatcher\(\) of class Joomla\\Plugin\\System\\Cache\\Extension\\Cache\:
 				5\.2 will be removed in 7\.0
 				             Plugin should implement DispatcherAwareInterface on its own, when it is needed\.$#
@@ -15710,6 +15765,16 @@ parameters:
 
 		-
 			message: '''
+				#^Call to deprecated method setDispatcher\(\) of class Joomla\\Plugin\\System\\Schemaorg\\Extension\\Schemaorg\:
+				5\.2 will be removed in 7\.0
+				             Plugin should implement DispatcherAwareInterface on its own, when it is needed\.$#
+			'''
+			identifier: method.deprecated
+			count: 1
+			path: plugins/system/schemaorg/services/provider.php
+
+		-
+			message: '''
 				#^Call to deprecated method getDispatcher\(\) of class Joomla\\Plugin\\System\\Schemaorg\\Extension\\Schemaorg\:
 				5\.2 will be removed in 7\.0
 				             Plugin should implement DispatcherAwareInterface on its own, when it is needed\.$#
@@ -15717,6 +15782,16 @@ parameters:
 			identifier: method.deprecated
 			count: 4
 			path: plugins/system/schemaorg/src/Extension/Schemaorg.php
+
+		-
+			message: '''
+				#^Call to deprecated method setDispatcher\(\) of class Joomla\\Plugin\\System\\Shortcut\\Extension\\Shortcut\:
+				5\.2 will be removed in 7\.0
+				             Plugin should implement DispatcherAwareInterface on its own, when it is needed\.$#
+			'''
+			identifier: method.deprecated
+			count: 1
+			path: plugins/system/shortcut/services/provider.php
 
 		-
 			message: '''
