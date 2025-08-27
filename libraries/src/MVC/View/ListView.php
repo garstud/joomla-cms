@@ -183,7 +183,7 @@ class ListView extends HtmlView
         $model = $this->getModel();
 
         $model->setUseExceptions(true);
-        
+
         // Prepare view data
         $this->initializeView();
 
