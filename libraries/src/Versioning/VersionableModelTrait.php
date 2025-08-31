@@ -115,6 +115,8 @@ trait VersionableModelTrait
             return false;
         }
 
+        $table = $this->getTable();
+
         // We set checked_out to the current user
         if ($table->hasField('checked_out')) {
             $rowArray[$table->getColumnAlias('checked_out')] = $this->getCurrentUser()->id;
