@@ -1461,15 +1461,7 @@ abstract class AdminModel extends FormModel
         }
 
         if ($this instanceof VersionableModelInterface) {
-            // Merge table data and data so that we write all data to the history
-            $tableData = ArrayHelper::fromObject($table);
-
-            $historyData = array_merge($data, $tableData);
-
-            // We have to set the key for new items, would be always 0 otherwise
-            $historyData[$key] = $this->getState($this->getName() . '.id');
-
-            $this->saveHistory($historyData, $context);
+            $this->saveHistory($data, $context);
         }
 
         if ($app->getInput()->get('task') == 'editAssociations') {
