@@ -70,7 +70,7 @@ class HtmlView extends BaseHtmlView
      * If updates are disabled, we hide the box
      *
      * @var    boolean
-     * @since  __DEPLOY_VERSION__
+     * @since  6.0.1
      */
     protected $autoUpdatesDisabled = false;
 
