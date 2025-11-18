@@ -67,7 +67,6 @@ final class Version
      * @since  3.8.0
      */
     public const EXTRA_VERSION = 'rc2-dev';
-    public const EXTRA_VERSION = 'rc2-dev';
 
     /**
      * Development status.
