@@ -149,5 +149,4 @@ class FilterModel extends AdminModel
 
         return $db->setQuery($query)->loadResult();
     }
-
 }
