@@ -1,6 +1,6 @@
 <?php
 
-/**New chat
+/**
 
  * @package     Joomla.Administrator
  * @subpackage  com_finder
