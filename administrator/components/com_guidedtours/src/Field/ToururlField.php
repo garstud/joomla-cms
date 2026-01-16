@@ -10,11 +10,11 @@
 
 namespace Joomla\Component\Guidedtours\Administrator\Field;
 
-use Joomla\CMS\Form\Field\ListField;
 use Joomla\CMS\Factory;
-use Joomla\Database\DatabaseInterface;
+use Joomla\CMS\Form\Field\ListField;
 use Joomla\CMS\HTML\HTMLHelper as Html;
 use Joomla\CMS\Language\Text;
+use Joomla\Database\DatabaseInterface;
 
 // phpcs:disable PSR1.Files.SideEffects
 \defined('_JEXEC') or die;
@@ -53,15 +53,14 @@ class ToururlField extends ListField
      */
     public function setup(\SimpleXMLElement $element, $value, $group = null)
     {
-        //var_dump($value); die();
         return parent::setup($element, $value, $group);
     }
 
     protected function getOptions()
     {
-        $db = Factory::getContainer()->get(DatabaseInterface::class);
+        $db    = Factory::getContainer()->get(DatabaseInterface::class);
         $query = $db->getQuery(true);
-        $query->select($db->quoteName(array('a.extension_id','a.name','a.element')));
+        $query->select($db->quoteName(['a.extension_id','a.name','a.element']));
         $query->from($db->quoteName('#__extensions', 'a'));
         $query->where($db->quoteName('a.type') . ' = "component"');
         $query->where($db->quoteName('a.enabled') . ' = 1');
@@ -70,19 +69,15 @@ class ToururlField extends ListField
         $db->setQuery((string)$query);
         $items = $db->loadObjectList();
 
-        $options = array();
-        if ($items)
-        {
-            //$options[] = $this->addOption("test1b", $object?);
+        $options = [];
+        if ($items) {
             $options[] = Html::_('select.option', 'custom', Text::_('COM_GUIDEDTOURS_FIELD_URLTYPE_CUSTOM_URL'));
-            //$options[] = Html::_('select.option', '', 'Select an URL');
             foreach($items as $item)
             {
                 $options[] = Html::_('select.option', '/administrator/index.php?option='.$item->element,  Text::_($item->name) . ' (' . $item->element . ')');
             }
         }
-        
-        //var_dump($items); die();
+
         return $options;
     }
 }
