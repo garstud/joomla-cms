@@ -75,13 +75,13 @@ class TourController extends FormController
         $db->setQuery($query);
         $bCompFound = $db->loadResult();
 
-        if(!$bCompFound) {
+        if (!$bCompFound) {
             // Set the internal error and also the redirect error.
             $this->setMessage(Text::sprintf('COM_GUIDEDTOURS_URL_COMPONENT_NOT_FOUND', $optionValue), 'error');
             $this->setRedirect(
                 Route::_('index.php?option=' . $this->option . '&view=' . $this->view_item . '&layout=edit&id=' . $id . $this->getRedirectToListAppend(), false)
             );
-			return false;
+            return false;
         }
 
         $result = parent::save($key, $urlVar);
