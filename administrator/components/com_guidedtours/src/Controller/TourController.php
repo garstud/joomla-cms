@@ -33,8 +33,8 @@ class TourController extends FormController
      *
      * @since   1.6
      */
-	public function save($key = null, $urlVar = null)
-    {    
+    public function save($key = null, $urlVar = null)
+    {   
         // Check for request forgeries.
         $this->checkToken();
 
@@ -43,42 +43,41 @@ class TourController extends FormController
         $data    = $this->input->post->get('jform', [], 'array');
 		$id  = $this->input->get('id', 0, 'int');
 
-		// extract 'option' url param
-		$tUrlParts = explode("?", $data['url']);
-		$uri = end($tUrlParts);
-		$tUriParts = explode("&", $uri);
-		$optionValue = "";
-		foreach($tUriParts as $urlParam) {
-			$posOption = strpos($urlParam, "option");
-			if($posOption!==false && $posOption==0) {
-				$tOption = explode("=", $urlParam);
-				if(isset($tOption[1])) {
-					$optionValue = $tOption[1];
-					break;
-				}
-			}
-		}
+        // extract 'option' url param
+        $tUrlParts   = explode("?", $data['url']);
+        $uri         = end($tUrlParts);
+        $tUriParts   = explode("&", $uri);
+        $optionValue = "";
+        foreach ($tUriParts as $urlParam) {
+            $posOption = strpos($urlParam, "option");
+            if ($posOption !== false && $posOption == 0) {
+                $tOption = explode("=", $urlParam);
+                if (isset($tOption[1])) {
+                    $optionValue = $tOption[1];
+                    break;
+                }
+            }
+        }
+        if (!$optionValue) {
+            $this->setMessage(Text::_('COM_GUIDEDTOURS_URL_COMPONENT_EMPTY'), 'error');
+            $this->setRedirect(
+                Route::_(
+                    'index.php?option=' . $this->option . '&view=tour&layout=edit&id='.$id
+                        . $this->getRedirectToListAppend(),
+                    false
+                )
+            );
+            return false;
+        }
 
-		if(!$optionValue) {
-			$this->setMessage(Text::_('COM_GUIDEDTOURS_URL_COMPONENT_EMPTY'), 'error');
-			$this->setRedirect(
-				Route::_(
-					'index.php?option=' . $this->option . '&view=tour&layout=edit&id='.$id
-						. $this->getRedirectToListAppend(),
-					false
-				)
-			);
-			return false;
-		}
-
-		// check component name in DB
-        $db = Factory::getContainer()->get('DatabaseDriver');
+        // check component name in DB
+        $db    = Factory::getContainer()->get('DatabaseDriver');
         $query = $db->getQuery(true);
         $query->select('extension_id')
             ->from('#__extensions')
             ->where('`element` = ' .$db->Quote($optionValue));
-		$db->setQuery($query);
-		$bCompFound = $db->loadResult();
+        $db->setQuery($query);
+        $bCompFound = $db->loadResult();
 
 		if(!$bCompFound) {
             // Set the internal error and also the redirect error.
@@ -94,12 +93,11 @@ class TourController extends FormController
 		}
 
         $result = parent::save($key, $urlVar);
-		$this->setRedirect(
-			Route::_(
-				'index.php?option=' . $this->option . '&view=' . $this->view_list,
-				false
-			)
-		);
+        $this->setRedirect(
+            Route::_(
+                'index.php?option=' . $this->option . '&view=' . $this->view_list, false
+            )
+        );
 
         return $result;
     }
