@@ -34,14 +34,14 @@ class TourController extends FormController
      * @since   1.6
      */
     public function save($key = null, $urlVar = null)
-    {   
+    {
         // Check for request forgeries.
         $this->checkToken();
 
         $model   = $this->getModel();
         $table   = $model->getTable();
         $data    = $this->input->post->get('jform', [], 'array');
-		$id  = $this->input->get('id', 0, 'int');
+        $id  = $this->input->get('id', 0, 'int');
 
         // extract 'option' url param
         $tUrlParts   = explode("?", $data['url']);
@@ -61,11 +61,7 @@ class TourController extends FormController
         if (!$optionValue) {
             $this->setMessage(Text::_('COM_GUIDEDTOURS_URL_COMPONENT_EMPTY'), 'error');
             $this->setRedirect(
-                Route::_(
-                    'index.php?option=' . $this->option . '&view=tour&layout=edit&id='.$id
-                        . $this->getRedirectToListAppend(),
-                    false
-                )
+                Route::_('index.php?option=' . $this->option . '&view=tour&layout=edit&id=' . $id . $this->getRedirectToListAppend(), false)
             );
             return false;
         }
@@ -75,28 +71,22 @@ class TourController extends FormController
         $query = $db->getQuery(true);
         $query->select('extension_id')
             ->from('#__extensions')
-            ->where('`element` = ' .$db->Quote($optionValue));
+            ->where('`element` = ' . $db->Quote($optionValue));
         $db->setQuery($query);
         $bCompFound = $db->loadResult();
 
-		if(!$bCompFound) {
+        if(!$bCompFound) {
             // Set the internal error and also the redirect error.
             $this->setMessage(Text::sprintf('COM_GUIDEDTOURS_URL_COMPONENT_NOT_FOUND', $optionValue), 'error');
             $this->setRedirect(
-                Route::_(
-                    'index.php?option=' . $this->option . '&view=' . $this->view_item . '&layout=edit&id='.$id
-                        . $this->getRedirectToListAppend(),
-                    false
-                )
+                Route::_('index.php?option=' . $this->option . '&view=' . $this->view_item . '&layout=edit&id=' . $id . $this->getRedirectToListAppend(), false)
             );
 			return false;
-		}
+        }
 
         $result = parent::save($key, $urlVar);
         $this->setRedirect(
-            Route::_(
-                'index.php?option=' . $this->option . '&view=' . $this->view_list, false
-            )
+            Route::_('index.php?option=' . $this->option . '&view=' . $this->view_list, false)
         );
 
         return $result;
