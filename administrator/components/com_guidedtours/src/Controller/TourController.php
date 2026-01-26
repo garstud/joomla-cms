@@ -41,7 +41,7 @@ class TourController extends FormController
         $model   = $this->getModel();
         $table   = $model->getTable();
         $data    = $this->input->post->get('jform', [], 'array');
-        $id  = $this->input->get('id', 0, 'int');
+        $id      = $this->input->get('id', 0, 'int');
 
         // extract 'option' url param
         $tUrlParts   = explode("?", $data['url']);
